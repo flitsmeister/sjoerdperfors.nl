@@ -1157,7 +1157,13 @@ ul.social li {
   color: #fb655e; }
 
 ul.social li a {
-  color: #111; }
+  background-color: #111;
+  color: White;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 2px;
+  text-transform: uppercase; }
 
 ul.social li a:hover {
   color: #fb655e; }
@@ -1175,8 +1181,12 @@ ul.social li a:hover {
   footer {
     top: 165px; }
   ul.social {
-    font-size: 1em; }
+    font-size: 0.8em; }
   ul.social li {
     float: none;
     padding-top: 8px;
-    padding-bottom: 8px; } }
+    padding-bottom: 8px;
+    margin-bottom: 12px; }
+  ul.social li a {
+    padding-left: 15px;
+    padding-right: 15px; } }
