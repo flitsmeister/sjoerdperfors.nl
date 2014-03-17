@@ -1,0 +1,144 @@
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
+// Global Foundation Settings
+@import "foundation/settings";
+
+// You can import only specific elements by adjusting the import below
+//@import "foundation";
+@import "foundation/components/Global";
+@import "foundation/components/Grid";
+@import "foundation/components/Type";
+
+$bg-color: #e8e6e9;
+$text-color: #111;
+$link-color: #111;
+$link-hover-color: #fb655e;
+$social-arrow-color: #fb655e;
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: $bg-color;
+	background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+
+	padding: 50px;
+}
+
+header {
+	position: relative;
+	top: 100px;
+}
+
+
+footer {
+	position: relative;
+	top: 350px;
+}
+
+h1,h2 {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	color: $text-color;
+
+	font-family: "nimbus-sans",sans-serif;
+	font-style: normal;
+	font-weight: 700;
+
+	font-size: 6em;
+	letter-spacing: -0.05em;
+}
+
+h2 {
+	color: $text-color;
+
+	font-family: "nimbus-sans",sans-serif;
+	font-style: normal;
+	font-weight: 300;
+
+	font-size: 3em;
+	letter-spacing: -0.05em;
+}
+
+ul.social {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+
+	font-family: "nimbus-sans",sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	letter-spacing: -0.05em;
+}
+
+ul.social li {
+	float: left;
+	margin-right: 20px;
+
+	color: $social-arrow-color;
+}
+
+ul.social li a {
+	background-color: $link-color;
+	color: White;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 2px;
+	text-transform: uppercase;
+}
+
+ul.social li a:hover {
+	color: $link-hover-color;
+}
+
+/* Make it responsive yo */
+
+@media only screen and (max-width: 480px) { 
+
+	body {
+		padding: 10px;
+	}
+
+	h1 {
+		font-size: 1.6em;
+	}
+
+	h2 {
+		font-size: 1.0em;
+	}
+
+	header {
+		top: 70px;
+	}
+
+	footer {
+		top: 165px;
+	}
+
+	ul.social {
+		font-size: 0.8em;
+	}
+
+	ul.social li {
+		float: none;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		margin-bottom: 12px;
+	}
+
+	ul.social li a {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
